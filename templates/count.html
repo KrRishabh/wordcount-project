@@ -1,0 +1,22 @@
+<H1> Count </h1>
+<H2> Original sentence was: </H2>
+<H1> {{fulltext}} </H1>
+<H1> total number of words = {{counting}} </H1>
+<H1> f </h1>
+<a href="http://127.0.0.1:8000/"> <H1> Start Again </H1> </a>
+{% for word, counttotal in worddict %}
+
+{{word}} - {{counttotal}}
+
+<br/>
+
+<br/>
+
+{% endfor %}
+
+
+<form action="{% url 'aboutpage' %}">
+
+  <br/>
+  <input type="submit" value="Visit About Page!"></input>
+</form>
